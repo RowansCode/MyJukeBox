@@ -33,6 +33,8 @@
             this.GenreTitleTextBox = new System.Windows.Forms.TextBox();
             this.GenreListBox = new System.Windows.Forms.ListBox();
             this.SelectGenreScroll = new System.Windows.Forms.HScrollBar();
+            this.NowPlayingTextBox = new System.Windows.Forms.TextBox();
+            this.PlayListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // CopyrightLabel
@@ -70,6 +72,25 @@
             this.SelectGenreScroll.Size = new System.Drawing.Size(183, 23);
             this.SelectGenreScroll.TabIndex = 3;
             // 
+            // NowPlayingTextBox
+            // 
+            this.NowPlayingTextBox.BackColor = System.Drawing.Color.Lime;
+            this.NowPlayingTextBox.Enabled = false;
+            this.NowPlayingTextBox.Location = new System.Drawing.Point(68, 258);
+            this.NowPlayingTextBox.Name = "NowPlayingTextBox";
+            this.NowPlayingTextBox.Size = new System.Drawing.Size(185, 20);
+            this.NowPlayingTextBox.TabIndex = 4;
+            // 
+            // PlayListBox
+            // 
+            this.PlayListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.PlayListBox.Enabled = false;
+            this.PlayListBox.FormattingEnabled = true;
+            this.PlayListBox.Location = new System.Drawing.Point(70, 284);
+            this.PlayListBox.Name = "PlayListBox";
+            this.PlayListBox.Size = new System.Drawing.Size(183, 108);
+            this.PlayListBox.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -77,6 +98,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(320, 481);
+            this.Controls.Add(this.PlayListBox);
+            this.Controls.Add(this.NowPlayingTextBox);
             this.Controls.Add(this.SelectGenreScroll);
             this.Controls.Add(this.GenreListBox);
             this.Controls.Add(this.GenreTitleTextBox);
@@ -95,6 +118,8 @@
         private System.Windows.Forms.TextBox GenreTitleTextBox;
         private System.Windows.Forms.ListBox GenreListBox;
         private System.Windows.Forms.HScrollBar SelectGenreScroll;
+        private System.Windows.Forms.TextBox NowPlayingTextBox;
+        private System.Windows.Forms.ListBox PlayListBox;
     }
 }
 
