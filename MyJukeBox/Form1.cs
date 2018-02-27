@@ -24,12 +24,11 @@ namespace MyJukeBox
 
         private void setupToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void MenuAbout_Click(object sender, EventArgs e)
         {
-
         }
     }
 }
