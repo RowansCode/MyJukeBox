@@ -137,7 +137,9 @@
             this.Controls.Add(this.CopyrightLabel);
             this.Controls.Add(this.Menu);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "My Juke Box";
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace MyJukeBox
 {
-    public partial class Setup : Form
+    public partial class AboutForm : Form
     {
-        public Setup()
+        public AboutForm()
         {
             InitializeComponent();
         }
 
-        private void Setup_Load(object sender, EventArgs e)
+        private void About_Load(object sender, EventArgs e)
         {
 
         }

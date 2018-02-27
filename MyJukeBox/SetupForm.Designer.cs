@@ -1,6 +1,6 @@
 ﻿namespace MyJukeBox
 {
-    partial class Setup
+    partial class SetupForm
     {
         /// <summary>
         /// Required designer variable.

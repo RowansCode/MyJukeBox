@@ -24,11 +24,14 @@ namespace MyJukeBox
 
         private void setupToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            SetupForm SetupForm = new SetupForm();
+            SetupForm.ShowDialog();
         }
 
         private void MenuAbout_Click(object sender, EventArgs e)
         {
+            AboutForm AboutForm = new AboutForm();
+            AboutForm.ShowDialog();
         }
     }
 }
