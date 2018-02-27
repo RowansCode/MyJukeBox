@@ -17,6 +17,19 @@ namespace MyJukeBox
             InitializeComponent();
         }
 
+        private void Menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
 
+        }
+
+        private void setupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuAbout_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

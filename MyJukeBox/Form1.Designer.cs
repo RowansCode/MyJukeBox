@@ -35,13 +35,17 @@
             this.SelectGenreScroll = new System.Windows.Forms.HScrollBar();
             this.NowPlayingTextBox = new System.Windows.Forms.TextBox();
             this.PlayListBox = new System.Windows.Forms.ListBox();
+            this.Menu = new System.Windows.Forms.MenuStrip();
+            this.MenuSetup = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // CopyrightLabel
             // 
             this.CopyrightLabel.AutoSize = true;
             this.CopyrightLabel.BackColor = System.Drawing.Color.Silver;
-            this.CopyrightLabel.Location = new System.Drawing.Point(154, -1);
+            this.CopyrightLabel.Location = new System.Drawing.Point(152, 0);
             this.CopyrightLabel.Name = "CopyrightLabel";
             this.CopyrightLabel.Size = new System.Drawing.Size(168, 13);
             this.CopyrightLabel.TabIndex = 0;
@@ -91,6 +95,33 @@
             this.PlayListBox.Size = new System.Drawing.Size(183, 108);
             this.PlayListBox.TabIndex = 5;
             // 
+            // Menu
+            // 
+            this.Menu.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuSetup,
+            this.MenuAbout});
+            this.Menu.Location = new System.Drawing.Point(0, 457);
+            this.Menu.Name = "Menu";
+            this.Menu.Size = new System.Drawing.Size(320, 24);
+            this.Menu.TabIndex = 6;
+            this.Menu.Text = "menuStrip1";
+            this.Menu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.Menu_ItemClicked);
+            // 
+            // MenuSetup
+            // 
+            this.MenuSetup.Name = "MenuSetup";
+            this.MenuSetup.Size = new System.Drawing.Size(49, 20);
+            this.MenuSetup.Text = "Setup";
+            this.MenuSetup.Click += new System.EventHandler(this.setupToolStripMenuItem_Click);
+            // 
+            // MenuAbout
+            // 
+            this.MenuAbout.Name = "MenuAbout";
+            this.MenuAbout.Size = new System.Drawing.Size(52, 20);
+            this.MenuAbout.Text = "About";
+            this.MenuAbout.Click += new System.EventHandler(this.MenuAbout_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -104,9 +135,12 @@
             this.Controls.Add(this.GenreListBox);
             this.Controls.Add(this.GenreTitleTextBox);
             this.Controls.Add(this.CopyrightLabel);
+            this.Controls.Add(this.Menu);
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "My Juke Box";
+            this.Menu.ResumeLayout(false);
+            this.Menu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,6 +154,9 @@
         private System.Windows.Forms.HScrollBar SelectGenreScroll;
         private System.Windows.Forms.TextBox NowPlayingTextBox;
         private System.Windows.Forms.ListBox PlayListBox;
+        private System.Windows.Forms.MenuStrip Menu;
+        private System.Windows.Forms.ToolStripMenuItem MenuSetup;
+        private System.Windows.Forms.ToolStripMenuItem MenuAbout;
     }
 }
 
