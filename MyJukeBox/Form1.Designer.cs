@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.CopyrightLabel = new System.Windows.Forms.Label();
+            this.GenreTitleTextBox = new System.Windows.Forms.TextBox();
+            this.GenreListBox = new System.Windows.Forms.ListBox();
+            this.SelectGenreScroll = new System.Windows.Forms.HScrollBar();
             this.SuspendLayout();
             // 
             // CopyrightLabel
@@ -42,6 +45,31 @@
             this.CopyrightLabel.TabIndex = 0;
             this.CopyrightLabel.Text = "Copyright 2018 Rowan Cattermoul";
             // 
+            // GenreTitleTextBox
+            // 
+            this.GenreTitleTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.GenreTitleTextBox.Enabled = false;
+            this.GenreTitleTextBox.Location = new System.Drawing.Point(68, 133);
+            this.GenreTitleTextBox.Name = "GenreTitleTextBox";
+            this.GenreTitleTextBox.Size = new System.Drawing.Size(185, 20);
+            this.GenreTitleTextBox.TabIndex = 1;
+            // 
+            // GenreListBox
+            // 
+            this.GenreListBox.Enabled = false;
+            this.GenreListBox.FormattingEnabled = true;
+            this.GenreListBox.Location = new System.Drawing.Point(68, 150);
+            this.GenreListBox.Name = "GenreListBox";
+            this.GenreListBox.Size = new System.Drawing.Size(185, 82);
+            this.GenreListBox.TabIndex = 2;
+            // 
+            // SelectGenreScroll
+            // 
+            this.SelectGenreScroll.Location = new System.Drawing.Point(70, 232);
+            this.SelectGenreScroll.Name = "SelectGenreScroll";
+            this.SelectGenreScroll.Size = new System.Drawing.Size(183, 23);
+            this.SelectGenreScroll.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -49,6 +77,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(320, 481);
+            this.Controls.Add(this.SelectGenreScroll);
+            this.Controls.Add(this.GenreListBox);
+            this.Controls.Add(this.GenreTitleTextBox);
             this.Controls.Add(this.CopyrightLabel);
             this.DoubleBuffered = true;
             this.Name = "Form1";
@@ -61,6 +92,9 @@
         #endregion
 
         private System.Windows.Forms.Label CopyrightLabel;
+        private System.Windows.Forms.TextBox GenreTitleTextBox;
+        private System.Windows.Forms.ListBox GenreListBox;
+        private System.Windows.Forms.HScrollBar SelectGenreScroll;
     }
 }
 
